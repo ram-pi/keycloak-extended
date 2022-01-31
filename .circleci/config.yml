@@ -6,7 +6,7 @@ jobs:
       - image: cimg/openjdk:17.0.1
     steps:
       - checkout
-      - run: ./mvnw -Dmaven.test.skip=true package
+      - run: mvn -Dmaven.test.skip=true package
       - persist_to_workspace:
          root: ./
          paths:
