@@ -1,0 +1,2 @@
+it.ramettapi.keycloak.saml.mappers.AttributeToGroupMapper
+it.ramettapi.keycloak.saml.mappers.AttributeToGroupWithRegexMapper
