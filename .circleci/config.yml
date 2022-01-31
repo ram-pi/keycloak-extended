@@ -1,0 +1,13 @@
+version: 2.0
+
+jobs:
+  build:
+    docker:
+      - image: cimg/openjdk:17.0.1
+    steps:
+      - checkout
+      - run: mvn -Dmaven.test.skip=true package
+      - persist_to_workspace:
+         root: ./
+         paths:
+           - target/
